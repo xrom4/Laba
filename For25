@@ -1,0 +1,17 @@
+import math
+X = math.pi/3
+N = 10
+print('X = ', X)
+print('N = ', N)
+p = 1
+S = 1
+k = 1
+for i in range(1,N+1):
+    p *= (-1) * X * X / (k * (k + 1))
+    S += p
+    print(i," : ", k," : ", k+1," : ", p," : ", S)
+    k += 2
+print("Result:")
+print(S)
+print("cos:")
+print(math.cos(X))
